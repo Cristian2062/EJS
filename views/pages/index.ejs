@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body>
+
+<header>
+    <%- include('../partials/header') %>
+</header>
+
+<main>
+    <h1>TOP MASCOTS</h1>
+    <p><%= linea %></p>
+    <ul>
+        <% mascotas.forEach(function(pepe){ %>
+            <li>
+                <%= pepe.name %> representa a <%= pepe.empresa %>, nacido en <%= pepe.año_nacimiento %>
+            </li>
+        <% }) %>
+    </ul>
+</main>
+
+<footer>
+    <%- include('../partials/footer') %>
+</footer>
+    
+</body>
+</html>
